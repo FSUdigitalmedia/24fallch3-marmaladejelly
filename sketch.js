@@ -43,4 +43,15 @@ function draw() {
     ySpeed = ySpeed2 * -2;  
   }
   y2 = y2 + ySpeed2;
+
+    //when mouse button is pressed, circles turn red
+    if (mouseIsPressed === true) {
+      fill(color (red(obj)), [alpha]);
+    } else {
+      fill(255);
+    }
+  
+    //white circles drawn at mouse position
+    circle(mouseX, mouseY, 100);
+  
 }
