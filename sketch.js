@@ -11,13 +11,12 @@ let ySpeed2 = 7; // speed in Y direction
 let d2 = 20; 
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(windowHeight, windowWidth);
+   // Integer RGB notation.
+   background('rgb(0, 255, 0)');
 }
 
-function draw() {
-  background(0);
-
-  // Update the first ball
+function draw() { // Update the first ball
   if (x1 > width - d1 / 2 || x1 < d1 / 2) {
     xSpeed1 *= -1;
   }
@@ -40,7 +39,7 @@ function draw() {
   
   if (y2 > height - d2 / 2 || y2 < d2 / 2) {
     ySpeed2 *= -1
-}
+  }}
 
 
 /* function draw() {
@@ -87,4 +86,4 @@ function draw() {
     //white circles drawn at mouse position
     circle(mouseX, mouseY, 100);
   
-}
+} */
