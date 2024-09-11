@@ -11,7 +11,7 @@ let ySpeed2 = 7; // speed in Y direction
 let d2 = 20; 
 
 function setup() {
-  createCanvas(windowHeight, windowWidth);
+  createCanvas(500, 500);
    // Integer RGB notation.
    background('rgb(0, 255, 0)');
 }
@@ -28,8 +28,7 @@ function draw() { // Update the first ball
   y1 += ySpeed1;
 
   // Draw the first ball
-  fill(255); // white
-  ellipse(x1, y1, d1);
+
 
   // Update the second ball
   if (x2 > width - d2 / 2 || x2 < d2 / 2) {
